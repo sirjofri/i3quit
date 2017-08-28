@@ -11,7 +11,6 @@ Installation
 Requirements:
 
 - perl
-- Data::Dumper (not really)
 - [AnyEvent][]
 - [AnyEvent::I3][]
 - [i3][]

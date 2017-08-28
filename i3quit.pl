@@ -1,5 +1,4 @@
 #!/usr/bin/perl
-use Data::Dumper;
 use AnyEvent;
 use AnyEvent::I3;
 
@@ -20,10 +19,6 @@ if($i3->connect->recv)
 if($i3->subscribe({
 	window => sub {
 		my ($c) = @_;
-		my $change = Dumper($c);
-
-		#print $change;
-		#print "Change: $c->{'change'}";
 
 		if($c->{'change'} eq "new")
 		{
